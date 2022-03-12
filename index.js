@@ -1,4 +1,10 @@
-document.querySelector("button").addEventListener("click", handleClick);
+// document.querySelector("button").addEventListener("click", handleClick);
+
+var buttonArray = document.querySelectorAll(".drum");
+
+for (let i = 0; i < buttonArray.length; i++) {
+    buttonArray[i].addEventListener("click", handleClick);
+}
 
 function handleClick() {
     alert("I got clicked!");
